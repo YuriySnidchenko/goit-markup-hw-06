@@ -407,20 +407,23 @@
             </button>
             <div class="container-form" role="group">
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                <label class="form-hidden"><span class="span">Имя</span>
-                    <input type="name" name="name">
+                <label for="name" class="form-hidden"><span class="span">Имя</span>
+                    <input type="text" name="name" id="name" />
                 </label>
-                <label class="form-hidden"><span class="span">Телефон</span>
-                    <input type="tel" name="telephone">
+                <label for="telephone" class="form-hidden"><span class="span">Телефон</span>
+                    <input type="tel" name="telephone" id="telephone" />
                 </label>
-                <label class="form-hidden"><span class="span">Почта</span>
-                    <input type="mail" name="mail">
+                <label for="mail" class="form-hidden"><span class="span">Почта</span>
+                    <input type="email" name="mail" id="mail" />
                 </label>
-                <label class="form-hidden"><span class="span">Комментарий</span>
-                    <textarea name="text" rows="8" placeholder="Введите текст"></textarea>
+                <label for="text" class="form-hidden"><span class="span">Комментарий</span>
+                    <textarea name="text" rows="8" placeholder="Введите текст" id="text"></textarea>
                 </label>
-                <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
-                <button type="button" class="form-btn">Отправить</button>
+                <label for="ok" class="chekbox">
+                    <input type="checkbox" name="ok" value="ok" id="ok" />
+                    <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
+                    <button type="submit" class="form-btn">Отправить</button>
+                </label>
             </div>
         </div>
     </div>

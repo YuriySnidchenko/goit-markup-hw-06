@@ -909,6 +909,7 @@ footer a {
 
 .form-hidden {
     display: block;
+    rgba(117, 117, 117, 1)
 }
 
 .span {
@@ -928,4 +929,9 @@ footer a {
     padding: 10px 55px;
     border-radius: 4px;
     border: none;
+    display: block;
+}
+
+.chekbox {
+    display: flex;
 }
