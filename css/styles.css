@@ -180,6 +180,7 @@ footer a {
 .nav-link:hover,
 .nav-link:focus {
     color: rgb(33, 150, 243);
+    transition: color var(--time-animation) var(--cubic-bezier);
 }
 
 /* ------ підкреслення -------  */
@@ -199,29 +200,6 @@ footer a {
     margin-left: 50px;
 }
 
-
-
-/* 
-.phone>img:hover {
-    background-color:;
-} */
-
-/* .mail::before {
-    content: "";
-    width: 16px;
-    height: 12px;
-    background-color: black;
-    background-image: url(/images/header/mail.svg);
-}
-
-.phone::before {
-    content: "";
-    width: 16px;
-    height: 12px;
-    background-color: black;
-    background-image: url(/images/header/phone.svg);
-} */
-
 /* Цвет активной страницы */
 
 .nav-link.link-active {
@@ -229,20 +207,19 @@ footer a {
     position: relative;
 }
 
-/* .li-active {
-} */
-
 .nav-link.link-active::after {
     content: "";
     position: absolute;
-    bottom: -31px;
     left: 0px;
     display: block;
     width: 100%;
     height: 4px;
-    background: #2196F3;
+    background-color: #2196F3;
     border-radius: 2px;
+    bottom: -32px;
+    /* скорее всгео не правильно*/
 }
+
 
 .contact-link {
     display: flex;
@@ -252,6 +229,7 @@ footer a {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: rgb(117, 117, 117);
+    transition: color var(--time-animation) var(--cubic-bezier);
 }
 
 .contact-link:hover,
@@ -270,6 +248,9 @@ footer a {
     padding-top: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/background-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     /*    outline: 1px solid red; - Линия подчеркивает весь контейнер*/
 }
 
@@ -435,11 +416,11 @@ footer a {
     justify-content: center;
     align-items: center;
     padding: 0;
-    border: none;
     margin-right: 10px;
     width: 44px;
     height: 44px;
     background-color: white;
+    border-radius: 50%;
 }
 
 .team-ling:last-child {
@@ -449,7 +430,7 @@ footer a {
 .team-link:hover {
     background-color: #2196F3;
     border-radius: 50%;
-
+    transition: 500ms;
 }
 
 .team-icons {
@@ -461,6 +442,7 @@ footer a {
 
 .team-link:hover .team-icons {
     fill: white;
+    transition: color var(--time-animation) var(--cubic-bezier);
 }
 
 .team-list {
@@ -540,10 +522,6 @@ footer a {
     color: #afb1b8;
 }
 
-/* .border-logo:not(:last-child) {
-    margin-right: 30px;
-} */
-
 .clients-list {
     width: 170px;
     height: 92px;
@@ -564,134 +542,7 @@ footer a {
 .border-logo:focus {
     color: var(--btn-color);
     border-color: var(--btn-color);
-}
-
-/*--------------------- футер ----------------*/
-
-.footer {
-    padding: 60px 0;
-    background-color: var(--bg-black-color);
-}
-
-.flexbox {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-contacts {
-    margin-right: 70px;
-}
-
-.footer>.logo {
-    margin: 0 0 20px 0;
-}
-
-.footer-second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-}
-
-.footer-title {
-    margin-bottom: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.footer-list::not(last-child) {
-    margin-bottom: 9px;
-}
-
-.contact-second {
-    display: flex;
-}
-
-.footer-second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-second:not(last-child) {
-    margin-right: 10px;
-}
-
-.footer-ul {
-    display: flex;
-}
-
-.footer-icons {
-    /* --- Ссылке добавили свойства---- */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    color: var(--white-color);
-    /* outline: 1px solid red; */
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-
-.footer-icons:hover,
-.footer-icons:focus {
-    background: #2196F3;
-}
-
-
-.footer-icons2 {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-}
-
-/* .footer-icons-link --- Отдельный контейнер */
-
-/* ------------Footer - contacts ----------- */
-
-.contact-map {
-    font-weight: 400;
-    line-height: 1.71;
-    color: rgb(255, 255, 255);
-}
-
-.contact-footer {
-    font-weight: 400;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.contact-footer:hover,
-.contact-footer:focus {
-    color: rgb(33, 150, 243);
-}
-
-/* ------------Footer - contacts ----------- */
-
-/* .contact {}  Footer - на УЛ в первом ДИВЕ */
-
-.contact-map {
-    font-weight: 400;
-    line-height: 1.71;
-    color: rgb(255, 255, 255);
-}
-
-.contact-footer {
-    font-weight: 400;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.contact-footer:hover,
-.contact-footer:focus {
-    color: rgb(33, 150, 243);
+    transition: color var(--time-animation) var(--cubic-bezier);
 }
 
 
@@ -755,23 +606,11 @@ footer a {
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: rgb(33, 150, 243);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 /* Портфолио main */
-
-
-
-
-/* .portfolio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    opacity: 0;
-} */
 
 .test-hover {
     /*=== DIV - контейнер загальний ===*/
@@ -810,6 +649,7 @@ footer a {
 
 .project-list:hover .portfolio-hover,
 .project-list:focus .portfolio-hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transform: translateY(0);
 }
 
@@ -838,6 +678,115 @@ footer a {
     line-height: 1.9;
     color: #757575;
 }
+
+/*--------------------- футер ----------------*/
+
+.footer {
+    padding: 60px 0;
+    background-color: var(--bg-black-color);
+}
+
+.flexbox {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+}
+
+.footer>.logo {
+    margin: 0 0 20px 0;
+}
+
+.footer-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-list::not(last-child) {
+    margin-bottom: 9px;
+}
+
+.contact-second {
+    display: flex;
+}
+
+.footer-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-second:not(last-child) {
+    margin-right: 10px;
+}
+
+.footer-ul {
+    display: flex;
+}
+
+.footer-icons {
+    /* --- Ссылке добавили свойства---- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--white-color);
+    /* outline: 1px solid red; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+
+.footer-icons:hover,
+.footer-icons:focus {
+    background: #2196F3;
+    transition: color var(--time-animation) var(--cubic-bezier);
+}
+
+.footer-icons2 {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* .footer-icons-link --- Отдельный контейнер */
+
+/* ------------Footer - contacts ----------- */
+
+.contact-map {
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgb(255, 255, 255);
+}
+
+.contact-footer {
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+    color: rgb(33, 150, 243);
+}
+
 
 /*== МОДАЛЬНЕ Вікно ===*/
 .backdrop {
