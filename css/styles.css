@@ -124,7 +124,7 @@ footer a {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    /* outline: 2px solid tOmato; */
+    outline: 2px solid tOmato;
 }
 
 .headers {
@@ -766,7 +766,43 @@ footer a {
     fill: currentColor;
 }
 
-/* .footer-icons-link --- Отдельный контейнер */
+/*==== Footer - Form   =====*/
+
+.btn-telegraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10, 28;
+}
+
+.connect {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.icon-telegraph {
+    display: flex;
+    fill: #fff;
+    padding-left: 10px;
+}
 
 /* ------------Footer - contacts ----------- */
 
@@ -821,6 +857,7 @@ footer a {
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--time-animation) var(--cubic-bezier);
+    outline: 1px solid red;
 }
 
 .backdrop.is-hidden .modal {
@@ -860,4 +897,35 @@ footer a {
     background-color: var(--white-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* ====  Modal - Forma all =====*/
+
+.container-form {
+    outline: 1px solid red;
+    padding: 40px;
+}
+
+.form-hidden {
+    display: block;
+}
+
+.span {
+    display: block;
+}
+
+.form-btn {
+    align-content: center;
+    font-family: inherit;
+    font-weight: 700;
+    min-width: 200px;
+    color: var(--white-color);
+    background-color: var(--btn-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 55px;
+    border-radius: 4px;
+    border: none;
 }
