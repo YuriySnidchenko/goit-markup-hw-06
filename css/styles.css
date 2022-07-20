@@ -809,6 +809,8 @@ footer a {
 .icon-telegraph {
     fill: var(--white-color);
     margin-left: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .input-registration:hover,
@@ -929,6 +931,7 @@ footer a {
     line-height: calc(23/20);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 14px;
 
     color: #212121;
 
@@ -938,13 +941,14 @@ footer a {
     /* <FORM> */
     /* outline: 1px solid red; */
     padding: 40px;
-    width: 528px
+    width: 528px;
 }
 
 .form-hidden {
     color: rgba(117, 117, 117, 1);
 
 }
+
 
 .input {
     width: 100%;
@@ -969,7 +973,7 @@ footer a {
 .span {
     display: block;
     position: relative;
-    margin-bottom: 10px;
+    margin-top: 4px;
 }
 
 .icon-form {
@@ -991,7 +995,6 @@ footer a {
 .form-textarea:focus {
     border-color: var(--btn-color);
     border-radius: 4px;
-
 }
 
 .chekbox::before {
@@ -1002,6 +1005,11 @@ footer a {
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 7px;
+}
+
+.chekbox {
+    display: flex;
+    align-items: center;
 }
 
 .input-checkbox:checked+.chekbox::before {
