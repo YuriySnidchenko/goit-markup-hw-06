@@ -377,23 +377,19 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <li class="footer-form list">
-                        <h2 class="footer-title">Подпишитесь на рассылку</h2>
-                    </li>
-                    <li class="footer-form list">
-                        <label for="" id="">
-                            <input type="text" name="" placeholder="E-mail"></label>
-                        <button type="button" class="btn-telegraph">
-                            <span class="connect">Подписаться</span>
-                            <svg class="icon-telegraph" width="24px" heigth="24px">
-                                <use href="./images/icons2/symbol-defs.svg#new-telegraph"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-
+            <div class="container-registration">
+                <h2 class=" footer-title">Подпишитесь на рассылку</h2>
+                <form name="registration-footer" class="footer-form">
+                    <label for="registraion">
+                        <input type="email" name="registration" placeholder="E-mail" class="input-registration"
+                            id="registraion" />
+                    </label>
+                    <button type="submit" class="btn-telegraph connect">Подписаться
+                        <svg class="icon-telegraph" width="24px" heigth="24px">
+                            <use href="./images/icons2/symbol-defs.svg#new-telegraph"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
@@ -406,36 +402,46 @@
                 </svg>
             </button>
             <form name="registration-form" class="container-form">
-                <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                <label for="name" class="form-hidden">
-                    <span class="span">Имя</span>
-                    <input type="text" name="name" id="name" class="input" />
-                    <svg width="12px" height="12px" class="icon-form">
-                        <use href="./images/icons2/symbol-defs.svg#new-people"></use>
-                    </svg>
+                <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+                <label for="name" class="form-hidden">Имя
+                    <span class="span">
+                        <input type="text" name="name" id="name" class="input" placeholder="Alex Black" />
+                        <svg width="12px" height="12px" class="icon-form">
+                            <use href="./images/icons2/symbol-defs.svg#new-people"></use>
+                        </svg>
+                    </span>
                 </label>
-                <label for="telephone">
-                    <span class="span">Телефон</span>
-                    <input type="tel" name="telephone" id="telephone" class="input" />
-                    <svg width="12px" height="12px" class="icon-form">
-                        <use href="./images/icons2/symbol-defs.svg#new-pnone"></use>
-                    </svg>
+                <label for="telephone" class="form-hidden">Телефон
+                    <span class="span">
+                        <input type="tel" name="telephone" id="telephone" class="input"
+                            placeholder="+380 00 000 0000" />
+                        <svg width="13px" height="13px" class="icon-form">
+                            <use href="./images/icons2/symbol-defs.svg#new-pnone"></use>
+                        </svg>
+                    </span>
                 </label>
-                <label for="mail" class="form-hidden">
-                    <span class="span">Почта</span>
-                    <input type="email" name="mail" id="mail" class="input" />
-                    <svg width="12px" height="12px" class="icon-form">
-                        <use href="./images/icons2/symbol-defs.svg#new-mail-svg"></use>
-                    </svg>
+                <label for="mail" class="form-hidden">Почта
+                    <span class="span">
+                        <input type="email" name="mail" id="mail" class="input" placeholder="mail@gmail.com" />
+                        <svg width="15px" height="12px" class="icon-form">
+                            <use href="./images/icons2/symbol-defs.svg#new-mail-svg"></use>
+                        </svg>
+                    </span>
                 </label>
-                <label for="text" class="form-hidden"><span class="span">Комментарий</span>
-                    <textarea name="text" rows="8" placeholder="Введите текст" id="text"></textarea>
+                <label for="text" class="form-hidden">Комментарий
+                    <span class="span">
+                        <textarea name="text" rows="5" id="text" placeholder="Введите текст"
+                            class="form-textarea"></textarea>
+                    </span>
                 </label>
+
+                <input type="checkbox" name="ok" value="ok" id="ok" class="input-checkbox visually-hidden" />
                 <label for="ok" class="chekbox">
-                    <input type="checkbox" name="ok" value="ok" id="ok" />
-                    <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
-                    <button type="submit" class="form-btn">Отправить</button>
+                    <p class="license">Соглашаюсь с рассылкой и принимаю
+                        <a href="" class="license color-link">Условия договора</a>
+                    </p>
                 </label>
+                <button type="submit" class="form-btn">Отправить</button>
             </form>
         </div>
     </div>
