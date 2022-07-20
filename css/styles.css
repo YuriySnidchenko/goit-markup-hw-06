@@ -907,14 +907,25 @@ footer a {
     padding: 40px;
 }
 
-.form-hidden {
-    display: block;
-    rgba(117, 117, 117, 1)
+/* .form-hidden {
+    color: rgba(117, 117, 117, 1);
+    position: relative;
+} */
+
+.input {
+    width: 100%;
+    height: 40px;
 }
 
 .span {
-    display: block;
+    /* display: block; */
 }
+
+/* .icon-form {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+} */
 
 .form-btn {
     align-content: center;

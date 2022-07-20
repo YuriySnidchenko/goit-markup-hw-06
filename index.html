@@ -405,16 +405,28 @@
                     <use href="./images/icons2/symbol-defs.svg#icon-close2"></use>
                 </svg>
             </button>
-            <div class="container-form" role="group">
+            <form name="registration-form" class="container-form">
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                <label for="name" class="form-hidden"><span class="span">Имя</span>
-                    <input type="text" name="name" id="name" />
+                <label for="name" class="form-hidden">
+                    <span class="span">Имя</span>
+                    <input type="text" name="name" id="name" class="input" />
+                    <svg width="12px" height="12px" class="icon-form">
+                        <use href="./images/icons2/symbol-defs.svg#new-people"></use>
+                    </svg>
                 </label>
-                <label for="telephone" class="form-hidden"><span class="span">Телефон</span>
-                    <input type="tel" name="telephone" id="telephone" />
+                <label for="telephone">
+                    <span class="span">Телефон</span>
+                    <input type="tel" name="telephone" id="telephone" class="input" />
+                    <svg width="12px" height="12px" class="icon-form">
+                        <use href="./images/icons2/symbol-defs.svg#new-pnone"></use>
+                    </svg>
                 </label>
-                <label for="mail" class="form-hidden"><span class="span">Почта</span>
-                    <input type="email" name="mail" id="mail" />
+                <label for="mail" class="form-hidden">
+                    <span class="span">Почта</span>
+                    <input type="email" name="mail" id="mail" class="input" />
+                    <svg width="12px" height="12px" class="icon-form">
+                        <use href="./images/icons2/symbol-defs.svg#new-mail-svg"></use>
+                    </svg>
                 </label>
                 <label for="text" class="form-hidden"><span class="span">Комментарий</span>
                     <textarea name="text" rows="8" placeholder="Введите текст" id="text"></textarea>
@@ -424,7 +436,7 @@
                     <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
                     <button type="submit" class="form-btn">Отправить</button>
                 </label>
-            </div>
+            </form>
         </div>
     </div>
     </div>
