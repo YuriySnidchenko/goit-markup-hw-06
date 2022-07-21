@@ -919,6 +919,10 @@ footer a {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.btn-modal:hover {
+    fill: #2196F3
+}
+
 
 /* ====  Modal - Forma all =====*/
 .title-form {
@@ -974,6 +978,7 @@ footer a {
     display: block;
     position: relative;
     margin-top: 4px;
+    margin-bottom: 10px;
 }
 
 .icon-form {
