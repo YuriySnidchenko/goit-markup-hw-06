@@ -11,7 +11,7 @@
     --time-animation: 250ms;
 }
 
-/* Загалні параметри css */
+/* Загалні параметри css
 body {
     background-color: var(--white-color);
     color: var(--main-color);
@@ -19,10 +19,10 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-}
+} */
 
 /* стандарти для всіх заголовків */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -30,18 +30,18 @@ h5,
 h6,
 p {
     margin: 0;
-}
+} */
 
 /* Обязательный аттрибут для паддингов */
-html {
+/* html {
     box-sizing: border-box;
-}
+} */
 
-*,
+/* *,
 *::after,
 *::before {
     box-sizing: inherit;
-}
+} */
 
 .svg {
     fill: currentColor;
@@ -50,24 +50,24 @@ html {
 }
 
 /* Класс для обнуления базовых свойств у списков (ul) */
-.list {
+/* .list {
     list-style: none;
     padding-left: 0;
     margin: 0;
-}
+} */
 
 /* Класс для обнуления базовых свойств у ссылок */
-.link {
+/* .link {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 /* Свойства для корректного отображения картинок */
-img {
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* Свойства для обнуления курсива у address */
 address {
@@ -75,7 +75,7 @@ address {
 }
 
 /* скрывает тег */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -86,7 +86,7 @@ address {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 header a,
 footer a {
@@ -119,14 +119,16 @@ footer a {
     color: var(--btn-color);
 }
 
-.container {
+/* .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     /* outline: 2px solid tOmato; */
 }
 
-.headers {
+/*
+
+ .headers {
     display: flex;
     padding: 24px 15px;
 }
